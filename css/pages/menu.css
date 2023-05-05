@@ -1,0 +1,116 @@
+header{
+    position: fixed;
+    z-index: 997;
+    width: 100%;
+    background-color: var(--background_eerieblack_op);
+
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: calc(5rem + 1vw);
+}
+
+.header_logo{
+    margin-left: 3vw;
+    margin-top: 1vh;
+    max-height: 5rem;
+}
+
+.header_img{
+    width:100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.header_social{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    height: calc(4.25rem + 1vh);
+
+}
+
+.header_social_icon{
+    position: relative;
+    width: 2.3rem;
+    height: 2.3rem;
+    top: 2vh;
+    
+}
+
+.header_social_icon img.header_social_link{
+    width: 2.3rem;
+    height: 2.3rem;
+    overflow: hidden;
+}
+
+.panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--background_eerieblack);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease,opacity 0.3s ease;
+    
+    
+}
+
+.panel.is-active{
+    transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    top: 2vh;
+    right: 1vw;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background_platinum);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--font_moonstone);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    color: var(--font_platinum);
+    background-color: var(--background_moonstone);
+    opacity: .7;
+
+
+}
+

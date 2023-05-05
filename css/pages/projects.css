@@ -1,0 +1,32 @@
+.portfolio_container{
+    text-align: center;
+}
+
+.portfolio_title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    margin-top:0;
+}
+
+.portfolio_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    column-gap: 3.3%;
+    padding: 0;
+
+}
+
+.portfolio_items{
+    width: 30%;
+    height: 300px;
+    margin-top: 2rem;
+
+}
+
+.portfolio_img{
+    border-radius: 10%;
+}
+

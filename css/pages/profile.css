@@ -1,0 +1,40 @@
+main {
+  font-family: var(--font_family_robotoserif);
+  color: var(--font_platinum);
+}
+
+.section {
+  padding: 2rem;
+  padding-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.profile_title {
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  
+}
+
+.profile_title span {
+  color: var(--font_moonstone);
+  font-size: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+}
+
+.profile_photo {
+  width: 8rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.profile_paragraph{
+  font-size: 1.5rem;
+}
