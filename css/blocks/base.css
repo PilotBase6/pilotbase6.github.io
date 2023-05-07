@@ -31,7 +31,7 @@
 body {
     background-color: var(--background_eerieblack);
     color: var(-font_powderBlue);
-    font-family: var(--font_family_oleoscript);
+    font-family: var(--font_family_ubuntu);
   }
 
 @media only screen and (max-width: 400px){

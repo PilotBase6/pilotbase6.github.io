@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/../css/pages/profile.css">
     <link rel="stylesheet" href="/../css/pages/aboutme.css">
     <link rel="stylesheet" href="/../css/pages/projects.css">
+    <link rel="stylesheet" href="/../css/pages/contact.css">
     
   </head>
   <body>
@@ -40,13 +41,13 @@
         <a href="#main_section1">Profile</a>
         <a href="#main_section2">About me</a>
         <a href="#main_section3">Portfolio</a>
-        <a href="#main_section4">Section 4</a>
+        <a href="#main_section4">Contact me</a>
       </nav>
     </aside>
     <main>
       <section id="main_section1" class="section profile">
         <h1 class="profile_title">
-          Hola, Soy Andrés <br>Front-end developer.
+          Hola, Soy Andrés <br> <span>Front-end developer.</span> 
         </h1>
         <p class="profile_paragraph">
           Ingeniero electrónico con interés en el desarrollo web, <br />
@@ -127,6 +128,7 @@
         </div>
         <div class="contactme_formcontainer">
           <form class="contactme_form">
+            <div class="name_email_container">
             <input
               type="text"
               maxlength="256"
@@ -140,7 +142,7 @@
               class="contactme_formitems contactme_email"
               required
             />
-
+          </div>
             <input
               type="text"
               maxlength="256"

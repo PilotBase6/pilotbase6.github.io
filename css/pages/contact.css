@@ -1,0 +1,100 @@
+
+  
+  .contactme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contactme_container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contactme_tittle {
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--font-family_ubuntu);
+    color: var(--font_moonstone);
+    font-style: normal;
+    font-weight: 700;
+    border: 0.063rem solid var(--font_eerieblack);
+    text-shadow: 0 0.25rem 0.938rem #d8dbe240;
+    margin: 1rem 0;
+  }
+  .contactme_info {
+    font-size: 2rem;
+    font-family: var(--font_family_robotoserif);
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--font_platinum);
+    margin-top: 1rem;
+  }
+  
+  .contactme_formcontainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactme_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  
+  .contactme_formitems {
+    width: 100%;
+    font-family: var(--font-family_ubuntu);
+    font-size: 1rem;
+    border: 0.0625rem solid transparent;
+    background-color: var(--background_eerieblack);
+    box-shadow: 0 0.25rem 0.938rem 0.313rem rgba(0, 0, 0, 0.5);
+    margin-top: .8rem;
+    padding: 1rem;
+    border: none;
+    color: var(--font_platinum);
+  }
+
+  .name_email_container{
+    display: flex;
+    column-gap: 2%;
+
+  }
+  .contactme_formitems:focus::placeholder{
+      opacity: 0;
+  }
+  
+  .contactme_submitcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: .6rem;
+  }
+  
+  .contactme_submit {
+    font-family: "Roboto Serif";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 0.0625rem solid transparent;
+    background-color: var(--background_eerieblack);
+    box-shadow: 0 0.25rem 0.938rem 0.313rem rgba(0, 0, 0, 0.5);
+    color: var(--font_powderBlue);
+    transition: 1.5s background-color, 0.5s color;
+    align-items: end;
+    padding: .7rem 2rem;
+  }
+  
+  .contactme_submit:hover {
+    background-color: var(--background_moonstone);
+    box-shadow: 0 0.25rem 0.938rem 0.313rem var(--background_charlestongreen, 80);
+    color: var(--font_eerieblack);
+  }
