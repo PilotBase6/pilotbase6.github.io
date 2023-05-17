@@ -1,36 +1,14 @@
-.aboutme{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.aboutme_container{
-    width: 50vw;
-}
-.aboutme_list{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    column-gap: 10%;
-    list-style: none;
-    margin-top: -.5rem;
-
-}
-.aboutme_items{
-    margin-top: 2rem;
-}
-
-.aboutme_article{
-    width: 50vw;
+.aboutme {
+    width: 100%;
+  }
+  .aboutme_article {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    column-gap: 1rem;
-}
+    align-items: center;
+  }
 
-.aboutme_title{
-    font-size: 5rem;
+  .aboutme_title {
+    font-size: 3.5rem;
     margin-top: 0;
     text-align: center;
     font-family: var(--font-family_ubuntu);
@@ -39,13 +17,63 @@
     font-weight: 700;
     border: 0.063rem solid var(--font_eerieblack);
     text-shadow: 0 0.25rem 0.938rem #d8dbe240;
-    
-}
+  }
 
-.aboutme_paragraph{
+  .aboutme_paragraph {
+    width: 80%;
     text-align: justify;
     font-size: 1.5rem;
     margin-top: 0;
-    
+  }
  
+  .aboutme_list {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutme_items {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .aboutme_items > svg {
+    width: 75%;
+    height: auto;
+  }
+
+@media screen and (min-width: 768px) {
+  .aboutme_list {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutme {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .aboutme_article {
+    width: 60vw;
+    justify-content: flex-start;
+    column-gap: 1rem;
+  }
+
+  .aboutme_title {
+    font-size: 5rem;
+  }
+
+  .aboutme_container {
+    width: 40vw;
+  }
+  .aboutme_list {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
 }

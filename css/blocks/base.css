@@ -1,11 +1,12 @@
 :root{
     --background_platinum: #d8dbe2;
-    --background_platinum_op: hsl(222, 15%, 87%,.8);
+    --background_platinum_op: rgba(217, 220, 227, 0.8);
     --background_powderBlue: #A9BCD0;
     --background_moonstone: #58A4B0;
     --background_charcoal: hsl(222, 19%, 27%);
-    --background_eerieblack: hsl(240, 5%, 11%);
+    --background_eerieblack: rgb(28, 28, 28);
     --background_eerieblack_op: rgba(27, 27, 29, 0.9);
+    --background_eerieblack_opg: rgba(27, 27, 29, .2);
     --background_charlestongreen: #2B2B2B;
     --background_blackcoral: #545E71;
     --background_black: #000000;
@@ -34,9 +35,4 @@ body {
     font-family: var(--font_family_ubuntu);
   }
 
-@media only screen and (max-width: 400px){
-    body{
-        font-size: 1rem;
-    }
-}
 

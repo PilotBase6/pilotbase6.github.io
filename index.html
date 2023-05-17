@@ -12,24 +12,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="/../css/pages/menu.css" />
-    <link rel="stylesheet" href="/../css/pages/profile.css">
-    <link rel="stylesheet" href="/../css/pages/aboutme.css">
-    <link rel="stylesheet" href="/../css/pages/projects.css">
-    <link rel="stylesheet" href="/../css/pages/contact.css">
-    
+    <link rel="stylesheet" href="/../css/pages/profile.css" />
+    <link rel="stylesheet" href="/../css/pages/aboutme.css" />
+    <link rel="stylesheet" href="/../css/pages/projects.css" />
+    <link rel="stylesheet" href="/../css/pages/contact.css" />
+    <link rel="stylesheet" href="/../css/pages/modalbox.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <header>
-        <div class="header_container">
-        <a href="/../index.html" class="header_logo"><img src="/../assets/img/Logo.svg" alt="Logo Portfolio" class="header_img"></a>
+      <div class="header_container">
+        <a href="/../index.html" class="header_logo"
+          ><img
+            src="/../assets/img/Logo.svg"
+            alt="Logo Portfolio"
+            class="header_img"
+        /></a>
         <div class="header_social">
-            <a href="https://www.linkedin.com/in/devamgc/" class="header_social_link " target="_blank"><i class="fa-brands fa-linkedin fa-2xl header_social_icon" style="color: #d8dbe2;"></i></a>
-            <a href="#" class="header_social_link" target="_blank" ><i class="fa-brands fa-github fa-2xl header_social_icon" style="color: #d8dbe2;"></i></a>
-            <a href="#" class="header_social_link" target="_blank"><i class="fa-brands fa-square-twitter fa-2xl header_social_icon" style="color: #d8dbe2;"></i></a>
+          <a
+            href="https://www.linkedin.com/in/devamgc/"
+            class="header_social_link"
+            target="_blank"
+            ><i
+              class="fa-brands fa-linkedin fa-2xl header_social_icon"
+              style="color: #d8dbe2"
+            ></i
+          ></a>
+          <a href="#" class="header_social_link" target="_blank"
+            ><i
+              class="fa-brands fa-github fa-2xl header_social_icon"
+              style="color: #d8dbe2"
+            ></i
+          ></a>
+          <a href="#" class="header_social_link" target="_blank"
+            ><i
+              class="fa-brands fa-square-twitter fa-2xl header_social_icon"
+              style="color: #d8dbe2"
+            ></i
+          ></a>
         </div>
-    </div>
+      </div>
     </header>
     <button class="panel-btn hamburger hamburger--vortex" type="button">
       <span class="hamburger-box">
@@ -44,107 +74,180 @@
         <a href="#main_section4">Contact me</a>
       </nav>
     </aside>
+    <aside class="modalbox is-active" data-box>
+      <div class="modalbox_container is-active">
+        <p class="modalbox_info">asdasdasd</p>
+        <div>
+          <button class="modalbox_btn">OK</button>
+        </div>
+      </div>
+    </aside>
     <main>
       <section id="main_section1" class="section profile">
         <h1 class="profile_title">
-          Hola, Soy Andrés <br> <span>Front-end developer.</span> 
+          Hola, Soy Andrés <br />
+          <span>Front-end developer.</span>
         </h1>
         <p class="profile_paragraph">
-          Ingeniero electrónico con interés en el desarrollo web, <br />
-          te invito a ver mi trabajo y si te gusta, contáctame.
+          Ingeniero electrónico con interés en el desarrollo web, te invito a
+          ver mi trabajo y si te gusta, contáctame.
         </p>
         <img src="./assets/img/profile.jpg" alt="" class="profile_photo" />
       </section>
       <section id="main_section2" class="section aboutme">
-        <div class="aboutme_container">
-          <ul class="aboutme_list">
-            <li class="aboutme_items" title="Javascript">
-              <svg alt="JAVASCRIPT" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 1052 1052">
-                <path fill="#f0db4f" d="M0 0h1052v1052H0z"></path>
-                <path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"></path>
-              </svg>
-            </li>
-            <li class="aboutme_items" title="HTML5">
-              <svg alt="HTML5" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
-                <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52"></path>
-                <path fill="#ef652a" d="M226 472l149-41 35-394H226"></path>
-                <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"></path>
-                <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"></path>
-              </svg>
-            </li>
-            <li class="aboutme_items" title="CSS3">
-              <svg alt="CSS3" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
-                <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"></path>
-                <path fill="#30a9dc" d="M226 472l149-41 35-394H226"></path>
-                <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"></path>
-                <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"></path>
-              </svg>
-            </li>
-            <li class="aboutme_items" title="Figma">
-              <svg alt="FIGMA" width="100" height="100" viewBox="0 0 256 384" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M64 384c35.328 0 64-28.672 64-64v-64H64c-35.328 0-64 28.672-64 64s28.672 64 64 64Z" fill="#0ACF83"></path><path d="M0 192c0-35.328 28.672-64 64-64h64v128H64c-35.328 0-64-28.672-64-64Z" fill="#A259FF"></path><path d="M0 64C0 28.672 28.672 0 64 0h64v128H64C28.672 128 0 99.328 0 64Z" fill="#F24E1E"></path><path d="M128 0h64c35.328 0 64 28.672 64 64s-28.672 64-64 64h-64V0Z" fill="#FF7262"></path><path d="M256 192c0 35.328-28.672 64-64 64s-64-28.672-64-64 28.672-64 64-64 64 28.672 64 64Z" fill="#1ABCFE"></path></svg>
-            </li>
-            <li class="aboutme_items" title="Tailwind">
-              <svg width="100" height="100" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#06B6D4" d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path></svg>
-            </li>
-          </ul>
-        </div>
         <article class="aboutme_article">
           <h2 class="aboutme_title">!Encantado de conocerte!</h2>
           <p class="aboutme_paragraph">
             Ingeniero electrónico Colombiano apasionado por el desarrollo web y
-            los videojuegos, <br />
-            siempre dispuesto ha asumir retos que pongan a prueba mis conocimientos y habilidades. <br /> <br>
+            los videojuegos, siempre dispuesto ha asumir retos que pongan a
+            prueba mis conocimientos y habilidades. <br />
+            <br />
             Algo que tienes que saber de mi es que me encantan las frutas y la
             tranquilidad, llevemonos bien.
           </p>
         </article>
+        <div class="aboutme_container">
+          <ul class="aboutme_list">
+            <li class="aboutme_items" title="Javascript">
+              <svg
+                alt="JAVASCRIPT"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 1052 1052"
+              >
+                <path fill="#f0db4f" d="M0 0h1052v1052H0z"></path>
+                <path
+                  d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                  fill="#323330"
+                ></path>
+              </svg>
+            </li>
+            <li class="aboutme_items" title="HTML5">
+              <svg
+                alt="HTML5"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 452 520"
+              >
+                <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52"></path>
+                <path fill="#ef652a" d="M226 472l149-41 35-394H226"></path>
+                <path
+                  fill="#ecedee"
+                  d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+                ></path>
+              </svg>
+            </li>
+            <li class="aboutme_items" title="CSS3">
+              <svg
+                alt="CSS3"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 452 520"
+              >
+                <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"></path>
+                <path fill="#30a9dc" d="M226 472l149-41 35-394H226"></path>
+                <path
+                  fill="#ecedee"
+                  d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"
+                ></path>
+              </svg>
+            </li>
+            <li class="aboutme_items" title="Figma">
+              <svg
+                alt="FIGMA"
+                width="100"
+                height="100"
+                viewBox="0 0 256 384"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid"
+              >
+                <path
+                  d="M64 384c35.328 0 64-28.672 64-64v-64H64c-35.328 0-64 28.672-64 64s28.672 64 64 64Z"
+                  fill="#0ACF83"
+                ></path>
+                <path
+                  d="M0 192c0-35.328 28.672-64 64-64h64v128H64c-35.328 0-64-28.672-64-64Z"
+                  fill="#A259FF"
+                ></path>
+                <path
+                  d="M0 64C0 28.672 28.672 0 64 0h64v128H64C28.672 128 0 99.328 0 64Z"
+                  fill="#F24E1E"
+                ></path>
+                <path
+                  d="M128 0h64c35.328 0 64 28.672 64 64s-28.672 64-64 64h-64V0Z"
+                  fill="#FF7262"
+                ></path>
+                <path
+                  d="M256 192c0 35.328-28.672 64-64 64s-64-28.672-64-64 28.672-64 64-64 64 28.672 64 64Z"
+                  fill="#1ABCFE"
+                ></path>
+              </svg>
+            </li>
+            <li class="aboutme_items" title="Tailwind">
+              <svg
+                width="100"
+                height="100"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#06B6D4"
+                  d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="main_section3" class="section portfolio">
         <div class="portfolio_container">
           <h3 class="portfolio_title">Proyectos</h3>
-          <ul class="portfolio_list">
-            <li class="portfolio_items">
-              <img src="/../assets/img/projects1.png"  alt="" class="portfolio_img" />
-            </li>
-            <li class="portfolio_items">
-              <img src="/../assets/img/projects2.png" alt=""  class="portfolio_img" />
-            </li>
-            <li class="portfolio_items">
-              <img src="/../assets/img/projects3.png" alt=""  class="portfolio_img" />
-            </li>
-            <li class="portfolio_items">
-              <img src="/../assets/img/projects4.png" alt=""  class="portfolio_img" />
-            </li>
-          </ul>
+          <ul class="portfolio_list"></ul>
         </div>
       </section>
       <section id="main_section4" class="section contactme">
         <div class="contactme_container">
           <h1 class="contactme_tittle">Did you like my work?</h1>
           <p class="contactme_info">
-            Send me a message, <br />
-            I'll contact you soon.
+            Send me a message, I'll contact you soon.
           </p>
         </div>
         <div class="contactme_formcontainer">
           <form class="contactme_form">
             <div class="name_email_container">
+              <input
+                type="text"
+                id="name"
+                maxlength="256"
+                placeholder="Name"
+                class="contactme_formitems contactme_name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                maxlength="256"
+                placeholder="Email"
+                class="contactme_formitems contactme_email"
+                required
+              />
+            </div>
             <input
               type="text"
-              maxlength="256"
-              placeholder="Name"
-              class="contactme_formitems contactme_name"
-            />
-            <input
-              type="email"
-              maxlength="256"
-              placeholder="Email"
-              class="contactme_formitems contactme_email"
-              required
-            />
-          </div>
-            <input
-              type="text"
+              id="subject"
               maxlength="256"
               placeholder="Subject"
               class="contactme_formitems contactme_subject"
@@ -152,10 +255,12 @@
             />
             <textarea
               maxlength="256"
+              id="message"
               placeholder="Message"
               class="contactme_formitems contactme_message"
               cols="30"
               rows="10"
+              required
             ></textarea>
             <div class="contactme_submitcontainer">
               <input

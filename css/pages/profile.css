@@ -14,20 +14,30 @@ main {
   text-align: center;
 }
 
+.profile{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+
 .profile_title {
-  margin: 2rem 0;
-  font-size: 3.5rem;
+  width: 100%;
+  margin: .5rem 0;
+  font-size: 2.5rem;
   white-space: nowrap;
   
 }
 
-.profile_title span {
+.profile_title> span {
   color: var(--font_moonstone);
   font-style: normal;
   font-weight: 700;
   border: 0.063rem solid var(--font_eerieblack);
   text-shadow: 0 0.25rem 0.938rem #d8dbe240;
-  font-size: 3rem;
+  font-size: 2rem;
   white-space: nowrap;
   overflow: hidden;
 
@@ -40,5 +50,51 @@ main {
 }
 
 .profile_paragraph{
+  width: 90%;
   font-size: 1.5rem;
+  text-align: justify;
+}
+
+
+@media screen and (min-width:768px) {
+  
+  
+  .profile_title {
+    font-size: 3.5rem;
+  }
+  
+  .profile_title span {
+    font-size: 3rem;
+  }
+  
+  .profile_photo {
+    width: 9rem;
+  }
+  
+  .profile_paragraph{
+    width: 80%;
+    font-size: 2rem;
+  }
+  
+}
+
+@media screen and (min-width:1020px) {
+  
+  .profile_title {
+    font-size: 3.5rem;  
+  }
+  
+  .profile_title span {
+    font-size: 3rem;
+  }
+  
+  .profile_photo {
+    width: 9rem;
+  }
+  
+  .profile_paragraph{
+    width: 65%;
+    font-size: 2rem;
+  }
+  
 }
