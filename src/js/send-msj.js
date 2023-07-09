@@ -1,4 +1,4 @@
-
+import showBox from "./show-box.js";
 
 (function () {
     emailjs.init("q_2oA3HBSY88c1xZ4");
@@ -25,7 +25,7 @@ export function sendEmail(){
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("asdasd")
+        return showBox(".modalbox_info","He recibido su mensaje, pronto me contactare con ustdes.");
         
 
     })

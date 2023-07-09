@@ -1,15 +1,17 @@
 .box{
     position: fixed;
-    z-index: 999;
+    z-index: 10000;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     background-color: var(--background_eerieblack_opg);
+    
 }
 
 .modalbox.is-active{
+    display: none;
     opacity: 0;
     visibility: hidden;
     transition: transform 0.3s ease,opacity 0.3s ease;
@@ -18,12 +20,14 @@
 
 
 .glass-effect{
-    width: 12rem;
-    height: 6rem;
+    width: 15rem;
+    height: 8rem;
     margin: 0;
     position: fixed;
-    top: 50vh;
-    left: 40vw;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -42,19 +46,24 @@
 
 .modalbox_info{
     font-size: 1rem;
-    text-align: justify;
-    color: var(--font_moonstone);
+    text-align: center;
+    font-family: var(--font-family_poppins);
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    text-shadow: 0 0.25rem 0.938rem #d8dbe240;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .modalbox_btn{
     width: 3rem;
     height: 2rem;
-    color: var(--font_moonstone);
+    color: #ffffff;
     font-weight: bold;
     background-color: var(--background_charlestongreen);
     border: 1px solid rgba(27, 27, 29,.18);
     border-radius: 32px;
     text-align: center;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }

@@ -1,13 +1,15 @@
-import hamburgerMenu from "./js/menu.js";
-import cards from "./js/projects.js";
-import { sendEmail } from "./js/send-msj.js";
-import info from "./js/modal-box.js"
+import hamburgerMenu from "./src/js/menu.js";
+import cards from "./src/js/projects.js";
+import { sendEmail } from "./src/js/send-msj.js";
+import info from "./src/js/modal-box.js"
+import showBox from "./src/js/show-box.js";
 // import FormValidation from "./js/form-validation.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
-  // console.log(cards(cardsInfo));
   info(".modalbox_btn");
+  // console.log(cards(cardsInfo));
+  
   const $fetch = "./db.json";
   fetch($fetch)
     .then((res) => {
@@ -45,12 +47,15 @@ sendMessage.addEventListener("click", (e) => {
     if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email)) {
       sendEmail();
      } else {
-      document.querySelector(".modalbox").classList.toggle("box");
-      document.querySelector(".modalbox").classList.remove("is-active");
-      document.querySelector(".modalbox_container").classList.toggle("glass-effect")
-      document.querySelector(".modalbox_container").classList.remove("is-active");
+
+      showBox(".modalbox_info","Por favor, ingresar un formato de email valido.");
+
+      // document.querySelector(".modalbox").classList.toggle("box");
+      // document.querySelector(".modalbox").classList.remove("is-active");
+      // document.querySelector(".modalbox_container").classList.toggle("glass-effect")
+      // document.querySelector(".modalbox_container").classList.remove("is-active");
      }
   }else {
-    alert("Por favor, completa todos los campos obligatorios.");
+    showBox(".modalbox_info","Por favor, ingresar los campos obligatorios requeridos.");
   }
 });

@@ -6,10 +6,11 @@
     --background_charcoal: hsl(222, 19%, 27%);
     --background_eerieblack: rgb(28, 28, 28);
     --background_eerieblack_op: rgba(27, 27, 29, 0.9);
-    --background_eerieblack_opg: rgba(27, 27, 29, .2);
+    --background_eerieblack_opg: rgba(27, 27, 29, .7);
     --background_charlestongreen: #2B2B2B;
     --background_blackcoral: #545E71;
     --background_black: #000000;
+    --background_red: rgb(114, 39, 65);
 
     --font_platinum: #D8DBE2;
     --font_powderBlue: #A9BCD0;
@@ -23,6 +24,7 @@
     --font_family_robotoserif: 'Roboto Serif', serif;
     --font_family_oleoscript: 'Oleo Script', cursive;
     --font_family_ubuntu: 'Ubuntu', sans-serif;
+    --font_family_poppins: 'Poppins', sans-serif;
 
     
 
@@ -30,9 +32,19 @@
 }
 
 body {
-    background-color: var(--background_eerieblack);
-    color: var(-font_powderBlue);
-    font-family: var(--font_family_ubuntu);
+    font-family: 'Poppins', sans-serif;
   }
+
+  .bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:#0f0e13;
+    background-image: 
+      radial-gradient(at 0% 0%, #100f15 0, transparent 50%), 
+      radial-gradient(at 50% 150%, #2f3e6a 0, transparent 50%), 
+      radial-gradient(at 100% 150%, #722741 0, transparent 50%);
+  }
+
 
 

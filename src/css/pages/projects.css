@@ -1,16 +1,20 @@
+
+
 .portfolio_container{
     text-align: center;
+    
 }
 
 .portfolio_title{
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    margin-top:0;
-    color: var(--font_moonstone);
-    font-style: normal;
-    font-weight: 700;
-    border: 0.063rem solid var(--font_eerieblack);
-    text-shadow: 0 0.25rem 0.938rem #d8dbe240;
+  width: 100%;
+  margin: 0 0;
+  font-size: 1.9rem;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .portfolio_list{
