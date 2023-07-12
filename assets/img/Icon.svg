@@ -1,7 +1,7 @@
 <svg width="189" height="183" viewBox="0 0 189 183" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="94.2" cy="91.2" rx="94.2" ry="91.2" fill="#1B1B1E"/>
 <g filter="url(#filter0_d_30_127)">
-<path d="M116.8 19C77.2 54.9333 25.28 124.6 134.4 115.8M53 19L134.4 162" stroke="#58A4B0" stroke-width="12" shape-rendering="crispEdges"/>
+<path d="M116.8 19C77.2 54.9333 25.28 124.6 134.4 115.8M53 19L134.4 162" stroke="#ffffff" stroke-width="12" shape-rendering="crispEdges"/>
 </g>
 <defs>
 <filter id="filter0_d_30_127" x="43.7856" y="14.5566" width="99.8288" height="158.412" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

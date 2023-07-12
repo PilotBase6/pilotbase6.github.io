@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/../src/css/pages/projects.css" />
     <link rel="stylesheet" href="/../src/css/pages/contact.css" />
     <link rel="stylesheet" href="/../src/css/pages/modalbox.css" />
+    <link rel="stylesheet" href="/../src/css/pages/footer.css">
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -95,10 +96,10 @@
     </aside>
     <aside class="panel">
       <nav class="menu">
-        <a href="#main_section1" ">Profile</a>
-        <a href="#main_section2">About me</a>
-        <a href="#main_section3">Portfolio</a>
-        <a href="#main_section4">Contact me</a>
+        <a href="#main_section1" ">Perfil</a>
+        <a href="#main_section2">Sobre mi</a>
+        <a href="#main_section3">Proyectos</a>
+        <a href="#main_section4">Trabajemos juntos</a>
       </nav>
     </aside>
     <aside class="modalbox is-active" data-box>
@@ -121,12 +122,15 @@
           ver mi trabajo y si te gusta, contáctame.
         </p>
         <div class="profile_btncontainer">
-          <button
+          <a
+           href="https://firebasestorage.googleapis.com/v0/b/sandra-s-blog.appspot.com/o/CV_Andres%20Guevara.pdf?alt=media&token=c78cfa8d-8ff9-4f77-9bef-6a3475f10ba7"
             class="profile_btn"
-          >CV Andrés</button>
-          <button
+            target="_blank"
+          >CV Andrés</a>
+          <a
+            href="#main_section4"
             class="profile_btn"
-          >Contactame</button>
+          >Contactame</a>
         </div>
       </div>
       <figure class="profile_right">
@@ -280,9 +284,9 @@
       </section>
       <section id="main_section4" class="section contactme">
         <div class="contactme_container">
-          <h1 class="contactme_tittle">Did you like my work?</h1>
+          <h1 class="contactme_tittle">¿Te gusto mi trabajo?</h1>
           <p class="contactme_info">
-            Send me a message, I'll contact you soon.
+            Enviamé un mensaje y pronto me pondre en contacto contigo.
           </p>
         </div>
         <div class="contactme_formcontainer">
@@ -292,7 +296,7 @@
                 type="text"
                 id="name"
                 maxlength="256"
-                placeholder="Name"
+                placeholder="Nombre"
                 class="contactme_formitems contactme_name"
                 required
               />
@@ -310,14 +314,14 @@
               type="text"
               id="subject"
               maxlength="256"
-              placeholder="Subject"
+              placeholder="Asunto"
               class="contactme_formitems contactme_subject"
               required
             />
             <textarea
               maxlength="256"
               id="message"
-              placeholder="Message"
+              placeholder="Mensaje"
               class="contactme_formitems contactme_message"
               cols="30"
               rows="10"
@@ -326,7 +330,7 @@
             <div class="contactme_submitcontainer">
               <input
                 type="submit"
-                value="Send Message"
+                value="Enviar Mensaje"
                 class="contactme_submit"
               />
             </div>
@@ -334,6 +338,10 @@
         </div>
       </section>
     </main>
+    <footer class="footer_section">
+   
+      <p class="footer_info">© 2023 PilotBase6. Todos los derechos reservados.</p>
+    </footer>
     <script src="./app.js" type="module"></script>
   </body>
 </html>
