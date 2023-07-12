@@ -48,7 +48,7 @@
 
 .contactme_formitems {
   width: 100%;
-  font-family: var(--font-family_ubuntu);
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   border: 0.0625rem solid transparent;
   background-color: var(--background_eerieblack);
@@ -56,7 +56,7 @@
   margin-top: .8rem;
   padding: 1rem;
   border: none;
-  color: var(--font_platinum);
+  color: #ffffff;
 }
 
 .name_email_container{
@@ -83,21 +83,28 @@
   border: 0.0625rem solid transparent;
   background-color: var(--background_eerieblack);
   box-shadow: 0 0.25rem 0.938rem 0.313rem rgba(0, 0, 0, 0.5);
-  color: var(--font_powderBlue);
+  color: #ffffff;
   transition: 1.5s background-color, 0.5s color;
   align-items: end;
   padding: .7rem 2rem;
+  cursor: pointer;
 }
 
 .contactme_submit:hover {
-  background-color: var(--background_moonstone);
-  box-shadow: 0 0.25rem 0.938rem 0.313rem var(--background_charlestongreen, 80);
-  color: var(--font_eerieblack);
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
 }
 
 
 
 @media screen and (min-width:768px) {
+  .contactme_tittle{
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .contactme_info {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
 
   .contactme_container{
     width: 85%;
@@ -121,13 +128,22 @@
   .contactme_container{
     width: 50%;
   }
-  
+  .contactme_tittle{
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
   .contactme_info {
+    text-align: center;
+    font-size: 1.5rem;
     width: 80%;
   }
   
   .contactme_formcontainer {
     width: 50%;
+  }
+  .contactme_form{
+    width: 80%;
   }
   
 }

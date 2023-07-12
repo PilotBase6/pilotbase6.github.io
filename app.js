@@ -5,8 +5,8 @@ import info from "./src/js/modal-box.js"
 import showBox from "./src/js/show-box.js";
 // import FormValidation from "./js/form-validation.js";
 
-document.addEventListener("DOMContentLoaded", (e) => {
-  hamburgerMenu(".panel-btn", ".panel", ".menu a");
+document.addEventListener("DOMContentLoaded", () => {
+  hamburgerMenu(".panel-btn", ".panel", ".show-icon",".close-icon", ".menu a");
   info(".modalbox_btn");
   // console.log(cards(cardsInfo));
   
@@ -56,6 +56,6 @@ sendMessage.addEventListener("click", (e) => {
       // document.querySelector(".modalbox_container").classList.remove("is-active");
      }
   }else {
-    showBox(".modalbox_info","Por favor, ingresar los campos obligatorios requeridos.");
+    showBox(".modalbox_info","Por favor, ingresar los campos requeridos.");
   }
 });

@@ -7,9 +7,8 @@
 
 .portfolio_title{
   width: 100%;
-  margin: 0 0;
+  margin: 2rem auto;
   font-size: 1.9rem;
-  white-space: nowrap;
   color: white;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -54,6 +53,7 @@
     opacity: 0;
     transition: all .6s ease-in-out;
     pointer-events: none;
+    font-family: 'Poppins', sans-serif;
 }
 .portfolio_items:hover .portfolio_card_info{
     opacity: 1;
@@ -62,17 +62,40 @@
 }
 
 .portfolio_card_info >div {
-    padding: 2rem;
+    padding: 0 1.5rem;
     
+}
+.portfolio_card_info >div> h4{
+    font-size: .5rem;
 }
 
 .portfolio_card_info >div>p{
     text-align: justify;
+    font-size: .4rem;
 
+}
+@media screen and (min-width:400px) and (max-width:767px) {
+    .portfolio_card_info >div {
+        padding: 0 2rem;
+        
+    }
+    .portfolio_card_info >div> h4{
+        font-size: 1rem;
+    }
+    
+    .portfolio_card_info >div>p{
+        text-align: justify;
+        font-size: .8rem;
+    
+    }
 }
 
 @media screen and (min-width:768px) {
 
+    .portfolio_title{
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
     .portfolio_list{
         display: grid;
         grid-template-columns: repeat(2,45%);
@@ -80,11 +103,28 @@
     .portfolio_items{
         width: 100%; 
     }
+    .portfolio_card_info >div {
+        padding: 2rem;
+        
+    }
+    .portfolio_card_info >div> h4{
+        font-size: 1rem;
+    }
+    
+    .portfolio_card_info >div>p{
+        text-align: justify;
+        font-size: .8rem;
+    
+    }
     
 }
 
 
 @media screen and (min-width:1024px) {
+    .portfolio_title{
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
 
 .portfolio_list{
     display: grid;
@@ -92,6 +132,19 @@
 }
 .portfolio_items{
     width: 100%; 
+}
+.portfolio_card_info >div {
+    padding: 2rem;
+    
+}
+.portfolio_card_info >div> h4{
+    font-size: 1rem;
+}
+
+.portfolio_card_info >div>p{
+    text-align: justify;
+    font-size: .8rem;
+
 }
 
 }

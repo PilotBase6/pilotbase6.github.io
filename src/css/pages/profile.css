@@ -54,6 +54,33 @@ main {
 
 }
 
+.profile_btncontainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: .6rem;
+}
+
+.profile_btn{
+  width: 7rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .6rem;
+  border: 0.0625rem solid transparent;
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
+  color: #ffffff;
+  transition: 1.5s background-color, 0.5s color;
+  align-items: end;
+  padding: .5rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  text-align: center;
+}
+.profile_btn:first-child{
+  margin-left: 0;
+}
+
 .profile_photo {
   width: 10rem;
   height: auto;
@@ -61,8 +88,8 @@ main {
 }
 
 .profile_paragraph{
-  width: 90%;
-  font-size: 1rem;
+  width: 85%;
+  font-size: .75rem;
   text-align: justify;
   color: rgb(163 179 188);
   font-family: 'Poppins', sans-serif;
@@ -78,16 +105,16 @@ main {
     place-items: center;
   }
   .profile_left{
-    place-self: start;
+    place-self: center;
   }
   
   .profile_title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-top: 1rem;
   }
   
   .profile_title span {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   
   .profile_right{
@@ -96,13 +123,18 @@ main {
   }
 
   .profile_photo {
-    width: 18rem;
+    width: 15rem;
     
   }
   
   .profile_paragraph{
-    width: 85%;
-    font-size: 1.5rem;
+    width: 90%;
+    font-size: 1rem;
+  }
+  .profile_btn{
+    width: 10rem;
+    padding: .8rem;
+    font-size: .7rem;
   }
   
 }
@@ -115,7 +147,7 @@ main {
     place-items: center;
   }
   .profile_left{
-    place-self: start;
+    place-self: center;
     padding-left: 2rem;
   }
   
@@ -132,12 +164,17 @@ main {
    
   }
   .profile_photo {
-    width: 20rem;
+    width: 18rem;
   }
   
   .profile_paragraph{
-    width: 80%;
-    font-size: 1.3rem;
+    width: 98%;
+    font-size: 1.2rem;
+  }
+  .profile_btn{
+    width: 12rem;
+    padding: .8rem;
+    font-size: 1rem;
   }
   
 }

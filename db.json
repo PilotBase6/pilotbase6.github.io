@@ -1,27 +1,28 @@
 [
   {
-    "linkContainer": "#",
-    "img": "/../assets/img/projects1.png",
-    "title": "Project 1",
-    "paragraph": "Lorem ips"
+    "linkContainer": "https://pilotbase6.github.io/TEXT-DECODER/",
+    "img": "/../assets/img/decoder.jpeg",
+    "title": "Codificador y decodificador de texto",
+    "paragraph": "Primer proyecto que hice con HTML, CSS y Vanilla JS, el diseño es tosco y sin vida, pero lo agrego a esta lista porque fue el inicio de mis estudios en el desarrollo web. (este proyecto me muestra que desde mis inicios he avanzado mucho)."
   },
   {
-    "linkContainer": "#",
-    "img": "/../assets/img/projects2.png",
-    "title": "Project 2",
-    "paragraph": "Lorem ips"
+    "linkContainer": "https://pilotbase6.github.io/SandraBlog/",
+    "img": "/../assets/img/sandra.jpeg",
+    "title": "Blog personal ingeniera civil",
+    "paragraph": "Blog personal a pedido de la ingeniera civil Sandra Maldonado. Se exponen sus habilidades, servicios de consultoria que ofrece y sus trabajos. proyecto hecho con React Hook y Tailwind css."
   },
   {
-    "linkContainer": "#",
-    "img": "/../assets/img/projects3.png",
-    "title": "Project 3",
-    "paragraph": "Lorem ips"
+    "linkContainer": "https://pilotbase6.github.io/Bershkacopy/",
+    "img": "/../assets/img/bershka.jpeg",
+    "title": "Bershka e-commerce copia",
+    "paragraph": "Proyecto hecho con React Hooks y tailwind css, copia de la famosa tienda de ropa Bershka donde podemos encontrar productos, diseño responsivo, login/register y un carrito de compras con estado global."
   },
   {
-    "linkContainer": "#",
-    "img": "/../assets/img/projects4.png",
-    "title": "Project 4",
-    "paragraph": "Lorem ips"
+    "linkContainer": "https://pilotbase6.github.io/",
+    "img": "/../assets/img/portafolio.jpeg",
+    "title": "Portafolio personal",
+    "paragraph": "Portafolio personal hecho con HTML, CSS y JS vanilla, en el puedes encontar información personal y profesional sobre mi, mi curriculum vitae y una sección de contacto."
   }
+ 
 ]
 
