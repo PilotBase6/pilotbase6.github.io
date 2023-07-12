@@ -10,8 +10,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height: auto;
   max-width: 100%;
-  min-height: 100vh;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@ main {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: .6rem;
+  font-size: .8rem;
   border: 0.0625rem solid transparent;
   background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
   color: #ffffff;
